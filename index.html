@@ -1,198 +1,480 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tanshvi Consulting Inc. — Digital, AI & Cloud Solutions</title>
-  <meta name="description" content="Tanshvi Consulting Inc. — AI, cloud-native, and web & mobile engineering for enterprises." />
-  <link rel="icon" href="data:,"><style>
-  :root{
-    --bg:#071426; --card:#0e2340; --muted:#9fb0d4; --accent:#3ea0ff; --glass: rgba(255,255,255,0.03);
-    --radius:14px; --glass-2: rgba(255,255,255,0.02);
-  }
-  *{box-sizing:border-box}
-  body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#e6f0ff;background:linear-gradient(180deg,var(--bg),#051226);-webkit-font-smoothing:antialiased}
-  a{color:var(--accent);text-decoration:none}
-  .container{max-width:1100px;margin:0 auto;padding:32px}
-  header{padding:20px 0}
-  .nav{display:flex;align-items:center;justify-content:space-between}
-  .brand{display:flex;gap:12px;align-items:center}
-  .logo{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6bd3ff);display:flex;align-items:center;justify-content:center;color:#042336;font-weight:700;font-size:20px;box-shadow:0 6px 20px rgba(30,85,140,0.25)}
-  nav ul{display:flex;gap:18px;margin:0;padding:0;list-style:none}
-  .cta{background:linear-gradient(90deg,var(--accent),#6bd3ff);padding:10px 16px;border-radius:10px;color:#042336;font-weight:600}
-  /* Hero */
-  .hero{display:flex;gap:32px;align-items:center;padding:48px 0}
-  .hero-left{flex:1}
-  .kicker{display:inline-block;background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-weight:600;margin-bottom:18px}
-  h1{font-size:40px;line-height:1.02;margin:0;color:#fff}
-  p.lead{color:var(--muted);margin-top:16px;font-size:17px}
-  .hero-cta{margin-top:22px;display:flex;gap:12px}
-  .btn{padding:12px 18px;border-radius:12px;border:0;font-weight:700;cursor:pointer}
-  .btn-primary{background:linear-gradient(90deg,var(--accent),#6bd3ff);color:#042336}
-  .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
-  .hero-right{flex:1;display:flex;justify-content:center}
-  .mock{width:420px;max-width:88%;border-radius:18px;padding:18px;background:linear-gradient(180deg,var(--card),#09223f);box-shadow:0 20px 60px rgba(6,20,36,0.6);border:1px solid rgba(255,255,255,0.03)}
-  .mock h3{margin:0;color:#dff3ff}
-  .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
-  .card{background:var(--glass);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
-  .services{margin-top:36px}
-  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-  .service{background:linear-gradient(180deg,var(--card),#08283f);padding:22px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
-  .service h4{margin:0 0 8px 0;color:#dff3ff}
-  .muted{color:var(--muted)}
-  /* portfolio */
-  .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
-  .thumb{height:140px;border-radius:10px;background:linear-gradient(135deg,rgba(255,255,255,0.03),rgba(0,0,0,0.08));display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
-  /* contact */
-  .contact{margin-top:40px;padding:22px;border-radius:12px;background:var(--glass);display:flex;gap:20px}
-  .contact-left{flex:1}
-  .contact-right{width:360px}
-  input,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#e8f6ff;margin-top:8px}
-  textarea{min-height:120px}
-  footer{margin-top:48px;padding:32px 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
-  /* responsive */
-  @media (max-width:900px){
-    .hero{flex-direction:column;text-align:center}
-    .features,.services-grid,.portfolio{grid-template-columns:repeat(1,1fr)}
-    nav ul{display:none}
-    .hero-right{order:2}
-    .contact{flex-direction:column}
-    .contact-right{width:100%}
-  }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Tanshvi Tech - Your Trusted Partner in Technology Consulting</title>
+    <meta name="description" content="We specialize in delivering tailored technology solutions that prioritize a personal and innovative approach to meet your business needs.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="nav">
-        <div class="brand">
-          <div class="logo">T</div>
-          <div>
-            <div style="font-weight:700;color:#fff">Tanshvi Consulting Inc.</div>
-            <div style="font-size:12px;color:var(--muted)">AI • Cloud • Web & Mobile</div>
-          </div>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <div>
-          <a class="cta" href="#contact">Get in touch</a>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="hero-left">
-          <div class="kicker">We build modern digital products</div>
-          <h1>Enterprise-grade software — faster with AI & cloud-native architecture</h1>
-          <p class="lead">Tanshvi Consulting helps product teams ship secure, scalable web and mobile apps. We mix human-centred product design with pragmatic engineering — React, Spring Boot, cloud infra, and ML where it matters.</p>
-          <div class="hero-cta">
-            <button class="btn btn-primary" onclick="location.href='#contact'">Book a free consult</button>
-            <button class="btn btn-ghost" onclick="window.open('mailto:info@tanshvi.com')">Email us</button>
-          </div>
-
-          <div class="features" style="margin-top:28px">
-            <div class="card"><strong>Faster delivery</strong><div class="muted">DevOps, CI/CD, microservices</div></div>
-            <div class="card"><strong>AI-first</strong><div class="muted">ML integration, data pipelines</div></div>
-            <div class="card"><strong>Secure by design</strong><div class="muted">IAM, OWASP hardening</div></div>
-          </div>
-        </div>
-
-        <div class="hero-right">
-          <div class="mock">
-            <h3>Sample Dashboard</h3>
-            <p class="muted">A quick look at a sleek admin dashboard we can build — analytics, alerts, and AI insights.</p>
-            <div style="height:12px"></div>
-            <div style="display:flex;gap:8px">
-              <div style="flex:1;background:linear-gradient(90deg,#0f3a62,#07324f);padding:10px;border-radius:8px;color:#dff3ff">Active projects<br><strong style="font-size:18px">12</strong></div>
-              <div style="flex:1;background:linear-gradient(90deg,#08283f,#053046);padding:10px;border-radius:8px;color:#dff3ff">Avg lead time<br><strong style="font-size:18px">3.4d</strong></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <h2>Tanshvi Tech </h2>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#solutions" class="nav-link">Solutions</a>
+                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-          </div>
         </div>
-      </section>
+    </nav>
 
-      <section id="services" class="services">
-        <h2 style="color:#fff;margin:0 0 14px 0">What we do</h2>
-        <div class="services-grid">
-          <div class="service">
-            <h4>Custom Web & Mobile Apps</h4>
-            <div class="muted">React, Angular, iOS, Android — production-ready code and automated pipelines.</div>
-          </div>
-          <div class="service">
-            <h4>AI & Data Engineering</h4>
-            <div class="muted">Natural Language, recommendation systems, MLOps & responsible AI.</div>
-          </div>
-          <div class="service">
-            <h4>Cloud Infrastructure</h4>
-            <div class="muted">Kubernetes, serverless, cost-optimized multi-cloud setups.</div>
-          </div>
-        </div>
-      </section>
-
-      <section id="work" style="margin-top:36px">
-        <h2 style="color:#fff;margin-bottom:12px">Selected work</h2>
-        <div class="portfolio">
-          <div class="thumb">Fintech dashboard</div>
-          <div class="thumb">Retail analytics</div>
-          <div class="thumb">Healthcare app</div>
-        </div>
-      </section>
-
-      <section id="contact" style="margin-top:36px">
-        <h2 style="color:#fff;margin-bottom:12px">Contact</h2>
-        <div class="contact">
-          <div class="contact-left">
-            <div style="font-weight:700;color:#fff">Let's build something great</div>
-            <div class="muted" style="margin-top:8px">Tell us about your project and timelines. We respond within 1 business day.</div>
-            <div style="margin-top:16px">
-              <div><strong>Email</strong><div class="muted">info@tanshvi.com</div></div>
-              <div style="margin-top:10px"><strong>Location</strong><div class="muted">Toronto, Canada (remote worldwide)</div></div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome To Tanshvi Tech </h1>
+                <p class="hero-subtitle">We specialize in delivering tailored technology solutions that prioritize a personal and innovative approach to meet your business needs.</p>
+                <div class="hero-cta">
+                    <a href="#services" class="btn btn--primary btn--lg">Explore More</a>
+                    <a href="#contact" class="btn btn--outline btn--lg">Contact Us</a>
+                </div>
             </div>
-          </div>
-
-          <div class="contact-right">
-            <form onsubmit="sendMail(event)">
-              <label class="muted">Name</label>
-              <input type="text" id="name" placeholder="Your name" required />
-              <label class="muted">Email</label>
-              <input type="email" id="email" placeholder="you@company.com" required />
-              <label class="muted">Message</label>
-              <textarea id="message" placeholder="Brief project description" required></textarea>
-              <div style="margin-top:12px;display:flex;gap:8px">
-                <button type="submit" class="btn btn-primary">Send message</button>
-                <button type="button" class="btn btn-ghost" onclick="window.open('mailto:info@tanshvi.com')">Email</button>
-              </div>
-              <div id="note" style="margin-top:8px;color:var(--muted);font-size:13px"></div>
-            </form>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <footer>
-        <div>© <span id="year"></span> Tanshvi Consulting Inc.</div>
-        <div class="muted">Built with care • <a href="#services">Our services</a></div>
-      </footer>
-    </main>
-  </div>
+    <!-- Trusted Partner Section -->
+    <section class="trusted-partner">
+        <div class="container">
+            <div class="section-header">
+                <h2>YOUR TRUSTED PARTNER IN TECHNOLY SOLUTIONS </h2>
+                <p>Empowering innovation, transforming businesses with technology</p>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    document.getElementById('year').innerText = new Date().getFullYear();
-    function sendMail(e){
-      e.preventDefault();
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-      // Simple mailto fallback — easy and requires no backend
-      const subject = encodeURIComponent('Website enquiry from ' + name);
-      const body = encodeURIComponent('Name: '+name+'\nEmail: '+email+'\n\n'+message);
-      window.location.href = `mailto:info@tanshvi.com?subject=${subject}&body=${body}`;
-      document.getElementById('note').innerText = 'Opening your email client — or copy & paste to email info@tanshvi.com';
-    }
-  </script>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Tanshvi Tech </h2>
+                    <p>We are dedicated to delivering innovative, reliable, and impactful solutions that empower businesses to achieve their goals and embrace the future with confidence.</p>
+                    <div class="about-points">
+                        <div class="point">
+                            <span class="point-icon">✓</span>
+                            <p>Experts in AI, Machine Learning, and Data Science solutions.</p>
+                        </div>
+                        <div class="point">
+                            <span class="point-icon">✓</span>
+                            <p>Comprehensive digital transformation strategies and implementation.</p>
+                        </div>
+                        <div class="point">
+                            <span class="point-icon">✓</span>
+                            <p>Streamlined business process optimization driving operational efficiency.</p>
+                        </div>
+                        <div class="point">
+                            <span class="point-icon">✓</span>
+                            <p>Advanced data analytics services for actionable business insights.</p>
+                        </div>
+                        <div class="point">
+                            <span class="point-icon">✓</span>
+                            <p>Strategic technology consulting to accelerate business growth.</p>
+                        </div>
+                        <div class="point">
+                            <span class="point-icon">✓</span>
+                            <p>Web development and SEO services for digital presence optimization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-visual">
+                        <div class="visual-element"></div>
+                        <div class="visual-text">Innovation & Excellence</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive technology solutions tailored to drive your business forward</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Leverage AI and Machine Learning to automate processes, enhance decision-making, and drive business efficiency and growth.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Intelligent</span>
+                        <span class="feature-tag">Predictive</span>
+                        <span class="feature-tag">Automated</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Digital Transformation</h3>
+                    <p>Develop comprehensive digital strategies, implement modern technologies, and transform business operations for long-term success.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Strategic</span>
+                        <span class="feature-tag">Modern</span>
+                        <span class="feature-tag">Future-ready</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Business Process Optimization</h3>
+                    <p>Streamline operations and optimize business processes to improve efficiency, reduce costs, and enhance productivity.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Streamlined</span>
+                        <span class="feature-tag">Efficient</span>
+                        <span class="feature-tag">Optimized</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Data Analytics & Insights</h3>
+                    <p>Transform raw data into actionable insights, build efficient pipelines, and ensure secure, reliable data management.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Insightful</span>
+                        <span class="feature-tag">Actionable</span>
+                        <span class="feature-tag">Strategic</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Technology Strategy</h3>
+                    <p>Develop comprehensive technology roadmaps and strategic plans that align with business objectives and drive growth.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Strategic</span>
+                        <span class="feature-tag">Aligned</span>
+                        <span class="feature-tag">Results-driven</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Web Development & SEO</h3>
+                    <p>Create visually stunning, user-friendly websites with SEO strategies that drive traffic, improve visibility, and achieve top rankings.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Modern</span>
+                        <span class="feature-tag">SEO-optimized</span>
+                        <span class="feature-tag">Conversion-focused</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2>How Our Solutions Work</h2>
+                <p>Delivering innovative technology solutions in AI, Digital Transformation, Business Process Optimization, Data Analytics, Technology Strategy, and Web Development & SEO, driving business efficiency.</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-item">
+                    <div class="solution-number">01</div>
+                    <h3>Consultation & Analysis</h3>
+                    <p>We begin with a comprehensive assessment of your current technology landscape and business objectives to identify opportunities for improvement and growth.</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-number">02</div>
+                    <h3>Strategy Development</h3>
+                    <p>Our experts develop a tailored strategy that aligns with your business goals, incorporating the latest technologies and best practices for optimal results.</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-number">03</div>
+                    <h3>Implementation & Deployment</h3>
+                    <p>We execute the solution with precision, ensuring seamless integration with your existing systems while minimizing disruption to your operations.</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-number">04</div>
+                    <h3>Optimization & Support</h3>
+                    <p>Continuous monitoring and optimization ensure your technology solutions deliver maximum value, with ongoing support to adapt to evolving business needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Hear from businesses that have transformed with our technology solutions</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Tanshvi Tech streamlined our operations with innovative, seamless, and expert AI solutions!"</p>
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>John R</strong>
+                        <span>Business Intelligence Manager</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Their tailored digital transformation solutions turned challenges into opportunities with outstanding service and precision!"</p>
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Sarah M</strong>
+                        <span>Technical Project Manager</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Partnering with Tanshvi was the best decision! They delivered scalable, reliable technology solutions for our growth."</p>
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Lisa T</strong>
+                        <span>Digital Transformation Lead</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Tanshvi's team combines expertise with professionalism, helping us achieve our digital goals faster and more efficiently!"</p>
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>David K</strong>
+                        <span>Product Development Director</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"From concept to execution, Tanshvi Tech showed unmatched skill, dedication, and client focus in our AI implementation!"</p>
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Liam K</strong>
+                        <span>Software Development Manager</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Their proactive approach and data-driven strategies empowered us to scale efficiently with exceptional, reliable service!"</p>
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Oliver R</strong>
+                        <span>System Administrator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Insights</h2>
+                <p>Stay updated with the latest trends and insights in technology consulting</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">📊</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">AI & Technology</span>
+                            <span class="blog-date">December 15, 2024</span>
+                        </div>
+                        <h3>The Future of AI in Business Process Optimization</h3>
+                        <p>Discover how artificial intelligence is revolutionizing business processes and creating new opportunities for operational efficiency and growth in today's competitive landscape.</p>
+                        <div class="blog-author">
+                            <span>By Tanshvi Tech Team</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">🚀</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Digital Transformation</span>
+                            <span class="blog-date">December 10, 2024</span>
+                        </div>
+                        <h3>Digital Transformation Strategies for Modern Enterprises</h3>
+                        <p>Learn essential strategies for successful digital transformation initiatives that can help your organization stay competitive and drive sustainable growth in the digital age.</p>
+                        <div class="blog-author">
+                            <span>By Tanshvi Tech Team</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">📈</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Data Analytics</span>
+                            <span class="blog-date">December 5, 2024</span>
+                        </div>
+                        <h3>Data-Driven Decision Making: Turning Insights into Action</h3>
+                        <p>Explore how organizations can leverage data analytics and business intelligence to make informed decisions that drive business success and competitive advantage.</p>
+                        <div class="blog-author">
+                            <span>By Tanshvi Tech Team</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>Let's discuss how we can help you leverage technology to achieve your business goals and drive sustainable growth.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>Email</strong>
+                            <a href="mailto:hello@tanshviconsulting.com">hello@tanshviconsulting.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone</strong>
+                            <a href="tel:+16471234567">+1 (647) 123-4567</a>
+                            <a href="tel:+12891237890">+1 (289) 123-7890</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Location</strong>
+                            <span>Milton, Ontario, Canada</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company</label>
+                            <input type="text" id="company" name="company" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="service" class="form-label">Service Interest</label>
+                            <select id="service" name="service" class="form-control">
+                                <option value="">Select a service</option>
+                                <option value="ai-ml">AI & Machine Learning</option>
+                                <option value="digital-transformation">Digital Transformation</option>
+                                <option value="process-optimization">Business Process Optimization</option>
+                                <option value="data-analytics">Data Analytics & Insights</option>
+                                <option value="technology-strategy">Technology Strategy</option>
+                                <option value="web-development-seo">Web Development & SEO</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tanshvi Tech </h3>
+                    <p>We specialize in delivering tailored technology solutions that prioritize a personal and innovative approach to meet your business needs.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">AI & Machine Learning</a></li>
+                        <li><a href="#services">Digital Transformation</a></li>
+                        <li><a href="#services">Business Process Optimization</a></li>
+                        <li><a href="#services">Data Analytics & Insights</a></li>
+                        <li><a href="#services">Technology Strategy</a></li>
+                        <li><a href="#services">Web Development & SEO</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Milton, Ontario, Canada</p>
+                    <p><a href="mailto:hello@tanshviconsulting.com">hello@tanshviconsulting.com</a></p>
+                    <p><a href="tel:+16471234567">+1 (647) 123-4567</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tanshvi Consulting Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
