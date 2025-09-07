@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tanshvi Consulting Inc. — Digital, AI & Cloud Solutions</title>
+  <meta name="description" content="Tanshvi Consulting Inc. — AI, cloud-native, and web & mobile engineering for enterprises." />
+  <link rel="icon" href="data:,"><style>
+  :root{
+    --bg:#071426; --card:#0e2340; --muted:#9fb0d4; --accent:#3ea0ff; --glass: rgba(255,255,255,0.03);
+    --radius:14px; --glass-2: rgba(255,255,255,0.02);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#e6f0ff;background:linear-gradient(180deg,var(--bg),#051226);-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:32px}
+  header{padding:20px 0}
+  .nav{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;gap:12px;align-items:center}
+  .logo{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6bd3ff);display:flex;align-items:center;justify-content:center;color:#042336;font-weight:700;font-size:20px;box-shadow:0 6px 20px rgba(30,85,140,0.25)}
+  nav ul{display:flex;gap:18px;margin:0;padding:0;list-style:none}
+  .cta{background:linear-gradient(90deg,var(--accent),#6bd3ff);padding:10px 16px;border-radius:10px;color:#042336;font-weight:600}
+  /* Hero */
+  .hero{display:flex;gap:32px;align-items:center;padding:48px 0}
+  .hero-left{flex:1}
+  .kicker{display:inline-block;background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-weight:600;margin-bottom:18px}
+  h1{font-size:40px;line-height:1.02;margin:0;color:#fff}
+  p.lead{color:var(--muted);margin-top:16px;font-size:17px}
+  .hero-cta{margin-top:22px;display:flex;gap:12px}
+  .btn{padding:12px 18px;border-radius:12px;border:0;font-weight:700;cursor:pointer}
+  .btn-primary{background:linear-gradient(90deg,var(--accent),#6bd3ff);color:#042336}
+  .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+  .hero-right{flex:1;display:flex;justify-content:center}
+  .mock{width:420px;max-width:88%;border-radius:18px;padding:18px;background:linear-gradient(180deg,var(--card),#09223f);box-shadow:0 20px 60px rgba(6,20,36,0.6);border:1px solid rgba(255,255,255,0.03)}
+  .mock h3{margin:0;color:#dff3ff}
+  .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+  .card{background:var(--glass);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+  .services{margin-top:36px}
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .service{background:linear-gradient(180deg,var(--card),#08283f);padding:22px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
+  .service h4{margin:0 0 8px 0;color:#dff3ff}
+  .muted{color:var(--muted)}
+  /* portfolio */
+  .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+  .thumb{height:140px;border-radius:10px;background:linear-gradient(135deg,rgba(255,255,255,0.03),rgba(0,0,0,0.08));display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+  /* contact */
+  .contact{margin-top:40px;padding:22px;border-radius:12px;background:var(--glass);display:flex;gap:20px}
+  .contact-left{flex:1}
+  .contact-right{width:360px}
+  input,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#e8f6ff;margin-top:8px}
+  textarea{min-height:120px}
+  footer{margin-top:48px;padding:32px 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+  /* responsive */
+  @media (max-width:900px){
+    .hero{flex-direction:column;text-align:center}
+    .features,.services-grid,.portfolio{grid-template-columns:repeat(1,1fr)}
+    nav ul{display:none}
+    .hero-right{order:2}
+    .contact{flex-direction:column}
+    .contact-right{width:100%}
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="nav">
+        <div class="brand">
+          <div class="logo">T</div>
+          <div>
+            <div style="font-weight:700;color:#fff">Tanshvi Consulting Inc.</div>
+            <div style="font-size:12px;color:var(--muted)">AI • Cloud • Web & Mobile</div>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <a class="cta" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <div class="kicker">We build modern digital products</div>
+          <h1>Enterprise-grade software — faster with AI & cloud-native architecture</h1>
+          <p class="lead">Tanshvi Consulting helps product teams ship secure, scalable web and mobile apps. We mix human-centred product design with pragmatic engineering — React, Spring Boot, cloud infra, and ML where it matters.</p>
+          <div class="hero-cta">
+            <button class="btn btn-primary" onclick="location.href='#contact'">Book a free consult</button>
+            <button class="btn btn-ghost" onclick="window.open('mailto:info@tanshvi.com')">Email us</button>
+          </div>
+
+          <div class="features" style="margin-top:28px">
+            <div class="card"><strong>Faster delivery</strong><div class="muted">DevOps, CI/CD, microservices</div></div>
+            <div class="card"><strong>AI-first</strong><div class="muted">ML integration, data pipelines</div></div>
+            <div class="card"><strong>Secure by design</strong><div class="muted">IAM, OWASP hardening</div></div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="mock">
+            <h3>Sample Dashboard</h3>
+            <p class="muted">A quick look at a sleek admin dashboard we can build — analytics, alerts, and AI insights.</p>
+            <div style="height:12px"></div>
+            <div style="display:flex;gap:8px">
+              <div style="flex:1;background:linear-gradient(90deg,#0f3a62,#07324f);padding:10px;border-radius:8px;color:#dff3ff">Active projects<br><strong style="font-size:18px">12</strong></div>
+              <div style="flex:1;background:linear-gradient(90deg,#08283f,#053046);padding:10px;border-radius:8px;color:#dff3ff">Avg lead time<br><strong style="font-size:18px">3.4d</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <h2 style="color:#fff;margin:0 0 14px 0">What we do</h2>
+        <div class="services-grid">
+          <div class="service">
+            <h4>Custom Web & Mobile Apps</h4>
+            <div class="muted">React, Angular, iOS, Android — production-ready code and automated pipelines.</div>
+          </div>
+          <div class="service">
+            <h4>AI & Data Engineering</h4>
+            <div class="muted">Natural Language, recommendation systems, MLOps & responsible AI.</div>
+          </div>
+          <div class="service">
+            <h4>Cloud Infrastructure</h4>
+            <div class="muted">Kubernetes, serverless, cost-optimized multi-cloud setups.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" style="margin-top:36px">
+        <h2 style="color:#fff;margin-bottom:12px">Selected work</h2>
+        <div class="portfolio">
+          <div class="thumb">Fintech dashboard</div>
+          <div class="thumb">Retail analytics</div>
+          <div class="thumb">Healthcare app</div>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:36px">
+        <h2 style="color:#fff;margin-bottom:12px">Contact</h2>
+        <div class="contact">
+          <div class="contact-left">
+            <div style="font-weight:700;color:#fff">Let's build something great</div>
+            <div class="muted" style="margin-top:8px">Tell us about your project and timelines. We respond within 1 business day.</div>
+            <div style="margin-top:16px">
+              <div><strong>Email</strong><div class="muted">info@tanshvi.com</div></div>
+              <div style="margin-top:10px"><strong>Location</strong><div class="muted">Toronto, Canada (remote worldwide)</div></div>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form onsubmit="sendMail(event)">
+              <label class="muted">Name</label>
+              <input type="text" id="name" placeholder="Your name" required />
+              <label class="muted">Email</label>
+              <input type="email" id="email" placeholder="you@company.com" required />
+              <label class="muted">Message</label>
+              <textarea id="message" placeholder="Brief project description" required></textarea>
+              <div style="margin-top:12px;display:flex;gap:8px">
+                <button type="submit" class="btn btn-primary">Send message</button>
+                <button type="button" class="btn btn-ghost" onclick="window.open('mailto:info@tanshvi.com')">Email</button>
+              </div>
+              <div id="note" style="margin-top:8px;color:var(--muted);font-size:13px"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div>© <span id="year"></span> Tanshvi Consulting Inc.</div>
+        <div class="muted">Built with care • <a href="#services">Our services</a></div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+    function sendMail(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      // Simple mailto fallback — easy and requires no backend
+      const subject = encodeURIComponent('Website enquiry from ' + name);
+      const body = encodeURIComponent('Name: '+name+'\nEmail: '+email+'\n\n'+message);
+      window.location.href = `mailto:info@tanshvi.com?subject=${subject}&body=${body}`;
+      document.getElementById('note').innerText = 'Opening your email client — or copy & paste to email info@tanshvi.com';
+    }
+  </script>
+</body>
+</html>
